@@ -40,5 +40,5 @@ set syntax=on
 set ignorecase
 set laststatus=2
 set completeopt-=preview
-set listchars=eol:^,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:<,tab:>-,trail:~,extends:^,precedes:>
 set list
