@@ -42,3 +42,5 @@ set laststatus=2
 set completeopt-=preview
 set listchars=eol:<,tab:>-,trail:~,extends:^,precedes:>
 set list
+set cul
+set cuc
