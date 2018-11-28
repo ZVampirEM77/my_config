@@ -33,10 +33,10 @@ filetype plugin indent on
 " :PluginSearch foo      - searches for foo; append '!' to refresh local cache
 " :PluginClean           - confirms removal of unused plugins
 
+syntax on
 set hlsearch
 set incsearch
 set nu!
-set syntax=on
 set ignorecase
 set laststatus=2
 set completeopt-=preview
