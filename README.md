@@ -1,2 +1,8 @@
-# my_vim_config
-zvampirem's vim configuration file
+# my_config
+zvampirem's related configuration file in Linux
+
+## vim
+vim configuration file
+
+## tmux
+tmux configuration file
