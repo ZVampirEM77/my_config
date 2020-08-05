@@ -22,6 +22,12 @@ Plugin 'fatih/vim-go'
 " Install YCM
 Plugin 'Valloric/YouCompleteMe'
 
+" Dracula Theme
+Plugin 'dracula/vim', { 'name': 'dracula' }
+
+" Nerdtree
+Plugin 'preservim/nerdtree'
+
 " all of your plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -44,3 +50,11 @@ set listchars=eol:<,tab:>-,trail:~,extends:^,precedes:>
 set list
 set cul
 set cuc
+
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1   " 如果taglist 窗口是最后一个窗口则关闭 vim
+let Tlist_Ctags_Cmd="`brew --prefix`/bin/ctags"
+
+colorscheme molokai
+
+set tags+=/Users/vampirem/MyProject/ufs/ufs/tags
