@@ -4,6 +4,11 @@
 " -----------------------------------------
 
 set nocompatible
+set backspace=2
+set cc=95
+set laststatus=2
+set ruler
+set statusline="%f%p"
 filetype off
 
 " set the runtime path to include Vundle and initialize
@@ -16,17 +21,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Install Vim-go
-Plugin 'fatih/vim-go'
-
 " Install YCM
 Plugin 'Valloric/YouCompleteMe'
 
 " Dracula Theme
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
-" Nerdtree
-Plugin 'preservim/nerdtree'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " all of your plugins must be added before the following line
 call vundle#end()
@@ -50,11 +52,18 @@ set listchars=eol:<,tab:>-,trail:~,extends:^,precedes:>
 set list
 set cul
 set cuc
+set guifont=JetBrains\ Mono:h17
+set autoindent
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1   " 如果taglist 窗口是最后一个窗口则关闭 vim
 let Tlist_Ctags_Cmd="`brew --prefix`/bin/ctags"
 
-colorscheme molokai
+let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
-set tags+=/Users/vampirem/MyProject/ufs/ufs/tags
+colorscheme molokai
+cs add /Users/damon.zhang/Workspace/ufs/cscope.out
