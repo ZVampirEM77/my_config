@@ -66,4 +66,4 @@ let Tlist_Ctags_Cmd="`brew --prefix`/bin/ctags"
 let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
 colorscheme molokai
-cs add /Users/damon.zhang/Workspace/ufs/cscope.out
+set csre
